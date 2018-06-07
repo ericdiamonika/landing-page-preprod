@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Htag Institute</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo-HT.png">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.0.4/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.0.4/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.0.4/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.0.4/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.0.4/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+  </head>
+  <body>
+  <!-- Banner -->
+  <div class="block">
+    <!-- Header -->
+    <header class="header">
+      <img class="header-logo" src="img/logo-white.png" alt="Logo HTAG Institute" />
+    <!--  <a class="button is-primary is-rounded" href="#newsletter">Etre informé</a> -->
+    </header>
+    <!-- Header -->
+
+    <div class="banner">
+      <img src="img/banner.png" alt="Bannière de HTAG Institute" class="banner-image" />
+      <div class="banner-content">
+        <h1>La première école <br>d’influence sociale</h1>
+        <div class="button-content">
+          <img class="button-arrow" src="img/down-arrow.svg" alt="Flèche directionnelle vers le bas" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Banner -->
+
+  <!-- Info -->
+  <div class="block">
+    <div class="container info">
+      <div class="columns">
+        <div class="column info-element">
+          <img src="img/bulle.jpg" alt="Visage" class="visage-image" />
+        </div>
+        <div class="column text-element">
+          <h2 class="title">Apprenez à rassembler une communauté<br/> et à partager vos passions</h2>
+          <p>Communiquer et partager sont des valeurs importantes pour vous ?
+            Vous avez une personnalité unique et vous ne savez pas comment vous mettre en avant ? <br>
+            HTAG Institute va vous apporter les réponses qu’il vous faut.
+            Apprenez à gérer votre e-reputation, vos réseaux sociaux et à créer un vrai mood que vous pouvez partager
+            avec vos followers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Info -->
+
+  <!-- contact -->
+  <div class="block footer" style="background-image: url(img/BG-orange.svg)">
+    <div class="left">
+      <h2 class="title">Restons en contact</h2>
+      <!-- <p>Pour devenir un des influenceurs de demain, n'hésite pas à nous laisser ton mail, nous te tiendrons au courant quand à la construction de notre école.</p>
+      <h3>Soyez informer du lancement de l’école</h3>
+      <input id="newsletter" type="email" placeholder="Entrez votre e-mail" required>
+      <button type="submit" class="button-input">Etre informé</button> -->
+    </div>
+    <div class="right">
+
+    </div>
+  </div>
+  <!-- contact -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
