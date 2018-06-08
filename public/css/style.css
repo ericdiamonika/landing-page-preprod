@@ -89,6 +89,10 @@ body{
   animation: bounce 1s ease infinite alternate;
 }
 
+.bold {
+  font-weight: bold !important;
+}
+
 @keyframes bounce {
   from {top: 106px;} 50% {top: 86px;} to {top: 106px;}
   from {top: 106px;} to {top: 86px;}
@@ -225,10 +229,34 @@ h3{
 	background-color: inherit;
 }
 
+.block.footer{
+  padding: 5% 0;
+}
+
+.foot{
+  padding: 2% 0;
+  background-image: url(../img/footer-l.svg);
+  background-color: #ffebd6;
+}
+
+.footer .title{
+  text-align: center;
+}
+
 .footer-content {
   position: absolute;
   width: 100%;
   text-align: center;
+}
+
+.rs{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.marg{
+  margin: 0 2%;
 }
 
 .footer{
