@@ -41,6 +41,61 @@ body{
   z-index: 999
 }
 
+.cookies-message{
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+}
+
+.cookie-container{
+  display: flex;
+  padding: 2% 5%;
+  border-radius: 40px;
+  -webkit-backdrop-filter: blur(7.1px);
+  backdrop-filter: blur(7.1px);
+  background-color: #f6f6f6;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  left: 45%;
+  width: 55%;
+}
+
+.cookie{
+  position: relative;
+  top: 8px;
+  left: 3%;
+}
+
+.cookie-img{
+width: 40px;
+}
+
+.cookie-text{
+  padding: 0 6%;
+}
+.cookie-text .title{
+  font-size: 14px;
+  margin-bottom: inherit;
+  color: #757575;
+}
+
+.cookie-text p{
+  font-size: 12px;
+  margin-bottom: 5%;
+}
+.cookie-button{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 274px;
+  height: 44px;
+  border-radius: 22px;
+  border: solid 2px #757575;
+  cursor: pointer;
+  outline: none;
+}
+
 .header .header-menu {
   float: right;
   margin-right: 5%;
@@ -270,6 +325,13 @@ h3{
   }
 }
 
+@media screen and (max-width: 960px) {
+  .cookie-container{
+    left: 0;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 915px) {
   .button.is-primary{
     display: none;
@@ -331,6 +393,30 @@ h3{
   }
   .block.footer{
     padding-top: 8%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .cookie-button{
+    width: 240px;
+    height: 35px;
+  }
+
+  .cookie{
+    left: 0;
+    display: none;
+  }
+
+  .cookie-text .title{
+   font-size: 12px;
+  }
+
+  .cookie-text p{
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .cookie-text{
+    padding: 0 4%;
   }
 }
 
