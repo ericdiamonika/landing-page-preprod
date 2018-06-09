@@ -5,7 +5,7 @@ document.ready = function () {
 
     if ($('.cookies-message').length) {
         if (!bannerMessageCustomerValue) {
-            $('.cookies-message').remove();
+            $('.cookies-message').show();
             $('.cookies-message button').click(function () {
                 localStorage.setItem('cookies-message', true);
                 $('.cookies-message').remove()
