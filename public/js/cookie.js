@@ -11,8 +11,5 @@ document.ready = function () {
                 $('.cookies-message').remove()
             });
         }
-        else {
-            $('.cookies-message').remove()
-        }
     }
 };
