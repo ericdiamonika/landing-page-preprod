@@ -161,7 +161,6 @@ width: 40px;
   /*object-fit: contain;*/
 }
 
-
 .container .columns {
   padding: 5% 0;
 }
@@ -211,7 +210,6 @@ input{
   padding: 15px;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
-
 }
 
 input:focus{
@@ -258,18 +256,14 @@ h3{
 }
 
 .button.is-primary{
-  width: 10%;
   background-color: #7547e8;
   border-radius: 25px;
-  box-shadow: 2px 2px 8px 0 rgba(117, 71, 232, 0.65);
-  position: absolute;
-  bottom: -30%;
+  box-shadow: 2px 2px 8px 0 rgba(117, 71, 232, 0.45);
   font-size: 18px;
-  font-weight: bold;
-  right: 3%;
-  bottom: 40%;
-  letter-spacing: 1px;
-  padding: 0 8%;
+  color: #ffffff;
+  padding: 10px 45px;
+  text-decoration: none;
+ /* position: absolute;*/
 }
 
 .button:hover.is-primary:hover{
@@ -277,9 +271,28 @@ h3{
   color: #7547e8;
 }
 
-.block .banner-footer {
+.all-button {
+  width: 100%;
   position: relative;
+  margin-left: 2%;
 }
+
+.all-button .button.is-primary{
+  font-size: 0.9em;
+  margin: 4px;
+}
+
+.btn-back{
+  width: 19px;
+  position: absolute;
+  display: flex;
+  margin: 3px 19px;
+
+}
+
+/*.block .banner-footer {
+  position: relative;
+}*/
 
 .footer {
 	background-color: inherit;
@@ -299,11 +312,11 @@ h3{
   text-align: center;
 }
 
-.footer-content {
+/*.footer-content {
   position: absolute;
   width: 100%;
   text-align: center;
-}
+}*/
 
 .rs{
   display: flex;
@@ -312,12 +325,75 @@ h3{
 }
 
 .marg{
-  margin: 0 2%;
+  margin: 0 3%;
+}
+
+.marg a{
+  color: dimgrey;
+  text-decoration: none;
+}
+.marg a:hover{
+  color: grey;
+  text-decoration: none;
 }
 
 .footer{
   padding: inherit;
   margin-bottom: inherit !important;
+}
+
+.header-ML{
+  padding: 2% 0;
+}
+
+.header-ML h1{
+  color: white;
+  font-size: 33px;
+}
+
+.header-ML .ml{
+  width: 100%;
+}
+
+.icon .fa-angle-left{
+  margin-left: 2%;
+}
+
+.text-explain{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-explain p{
+  color: #000;
+}
+
+.text-explain a{
+  text-decoration: none;
+  color: #000;
+}
+
+.text-explain .t-explain{
+  width: 70%;
+  margin: 5%;
+}
+
+.t-explain h2{
+  padding-top: 2%;
+  color: #7547e8;
+}
+
+.t-explain h3{
+  color: #f86eb8;
+}
+
+.btn-back-responsive{
+  display: none;
+}
+
+li{
+  list-style: none;
 }
 
 @media screen and (max-width: 1022px) {
@@ -334,8 +410,15 @@ h3{
 }
 
 @media screen and (max-width: 915px) {
-  .button.is-primary{
+  .button.is-primary {
     display: none;
+  }
+
+  .btn-back-responsive {
+    display: block;
+    width: 8%;
+    position: absolute;
+    margin: 5% 3%;
   }
 
   .header .header-logo{
@@ -379,6 +462,12 @@ h3{
   .header {
     margin-top: inherit;
   }
+
+  .text-explain .t-explain{
+    width: 90%;
+    margin: 5%;
+  }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -431,5 +520,17 @@ h3{
   h1{
     font-size: 1.6rem;
     top: -85px;
+  }
+  .ml .title{
+    font-size: 1.2em;
+  }
+  .header-ML{
+    width: 100%;
+    position: relative;
+  }
+  .foot .marg{
+    margin: 4% 0%;
+    padding: 1% 1%;
+    font-size: 0.8em;
   }
 }
