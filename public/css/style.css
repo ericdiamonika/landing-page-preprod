@@ -42,7 +42,7 @@ body{
 }
 
 .cookies-message{
-  width: 100%;
+  max-width: 100%;
   z-index: 10;
   position: fixed;
   bottom: 0;
@@ -300,12 +300,14 @@ h3{
 
 .block.footer{
   padding: 5% 0;
+  max-height: 280px;
 }
 
 .foot{
   padding: 2% 0;
   background-image: url(../img/footer-l.svg);
   background-color: #ffebd6;
+  max-height: 60px;
 }
 
 .footer .title{
@@ -344,6 +346,7 @@ h3{
 
 .header-ML{
   padding: 2% 0;
+  max-height: 20px;
 }
 
 .header-ML h1{
@@ -507,6 +510,22 @@ li{
   }
   .cookie-text{
     padding: 0 4%;
+  }
+  .title{
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .columns p{
+    font-size: 0.8rem;
+  }
+  .rs img{
+    width: 85%;
+  }
+  .footer .title{
+    margin-bottom: inherit !important;
+  }
+  .block.footer{
+    height: 180px;
   }
 }
 
