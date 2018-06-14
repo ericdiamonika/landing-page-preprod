@@ -24,3 +24,25 @@ fbSignIn=()=>{
     }))
 }
 
+twitterSignIn=()=>{
+
+    t_provider = new firebase.auth.TwitterAuthProvider()
+    firebase.auth().signInWithPopup(t_provider).then(function(result){
+        console.log(result)
+        console.log("Success..twitter Account Linked")
+        var token = result.credential.accessToken;
+        var secret = result.credential.secret;
+        // The signed-in user info.
+        var tuser = result.user
+    }).catch((function(err){
+        console.log(err)
+        console.log("Failed to do")
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+    }))
+}
+
