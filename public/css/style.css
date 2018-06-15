@@ -28,7 +28,7 @@ body{
   z-index: 10;
 }
 
-.headedr a:hover {
+.header a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -36,7 +36,7 @@ body{
 .header .header-logo {
   margin-left: 5%;
   float: left;
-  width: 16%;
+  width: 10%;
   top: 0;
   z-index: 999
 }
@@ -48,7 +48,6 @@ body{
   bottom: 0;
     display: none;
 }
-
 .cookie-container{
   display: flex;
   padding: 2% 5%;
@@ -61,17 +60,14 @@ body{
   left: 45%;
   width: 55%;
 }
-
 .cookie{
   position: relative;
   top: 8px;
   left: 3%;
 }
-
 .cookie-img{
 width: 40px;
 }
-
 .cookie-text{
   padding: 0 6%;
 }
@@ -80,7 +76,6 @@ width: 40px;
   margin-bottom: inherit;
   color: #757575;
 }
-
 .cookie-text p{
   font-size: 12px;
   margin-bottom: 5%;
@@ -197,9 +192,13 @@ h1{
   text-transform: uppercase;
 }
 
-img{
+visage-image{
   max-width: none;
   width: 100%;
+}
+
+img{
+  max-width: none;
 }
 
 input{
@@ -246,7 +245,7 @@ p{
 }
 
 .left{
-  padding: 5%;
+  padding-left: 10%;
 }
 
 h3{
@@ -287,12 +286,7 @@ h3{
   position: absolute;
   display: flex;
   margin: 3px 19px;
-
 }
-
-/*.block .banner-footer {
-  position: relative;
-}*/
 
 .footer {
 	background-color: inherit;
@@ -314,12 +308,6 @@ h3{
   text-align: center;
 }
 
-/*.footer-content {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-}*/
-
 .rs{
   display: flex;
   width: 100%;
@@ -329,7 +317,6 @@ h3{
 .marg{
   margin: 0 3%;
 }
-
 .marg a{
   color: dimgrey;
   text-decoration: none;
@@ -399,6 +386,86 @@ li{
   list-style: none;
 }
 
+.parent{
+  display: flex;
+  margin-bottom: 4%;
+}
+
+.btn-RS{
+  display: block;
+  background: white;
+  width: 260px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 8%;
+}
+
+/*  --Partie google connect--  */
+
+.google{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-img{
+  margin-right: 5%;
+  width: 8%;
+}
+
+/*  --Partie Facebook connect--  */
+
+.facebook{
+  background: #3c5a99;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.Text-f{
+  color: white;
+}
+
+/*  --Partie twitter connect--  */
+
+.twitter{
+  background: #00aced;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.Text-t{
+  color: white;
+}
+
+/*  --Partie mail--  */
+
+.email{
+  background: #757575;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.email-img{
+  width: 9%;
+  margin-right: 15px;
+}
+
+.Text-m{
+  color: white;
+}
+
 @media screen and (max-width: 1022px) {
   h1{
     font-size: 3rem;
@@ -438,6 +505,7 @@ li{
     position: relative;
     right: 20%;
   }
+
   .button-input{
     width: 150px;
     height: 29px;
@@ -449,12 +517,14 @@ li{
     width: 258px;
     height: 29px;
   }
+
   div.column.text-element{
     padding: 8% 8% 0;
   }
   .left p{
     width: 100%;
   }
+
   h1{
     font-size: 2rem;
     padding-top: 5%;
@@ -471,6 +541,13 @@ li{
     margin: 5%;
   }
 
+  .parent{
+    display: block;
+  }
+
+  .right{
+    margin-top: 2%;
+  }
 }
 
 @media screen and (max-width: 540px) {

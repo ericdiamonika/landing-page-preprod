@@ -6,8 +6,10 @@
     <title>Htag Institute</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo-HT.png">
+    <script src="https://apis.google.com/js/api:client.js"></script>
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/5.0.4/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -19,6 +21,7 @@
     <script defer src="/__/firebase/init.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/effect.js"></script>
+      <script src="js/modal_email.js"></script>
     <script src="js/connect.js"></script>
   </head>
   <body>
@@ -86,17 +89,35 @@
         <br><br>
         <span class="bold">Si tu souhaites faire parti des premiers</span> à obtenir les clés pour devenir influent, <span class="bold">laisse nous ton contact.</span></p> -->
     </div>
+
     <div class="right">
-      <div class="google">
-        <button onclick="googleSignIn()"><img src="img/google.svg" alt="google connect"></button>
+        <div class="btn-RS" onclick="fbSignIn()">
+            <div class="google">
+                <img src="img/gg.png" alt="google connect" class="google-img">
+                <span class="Text-g">S'enregistrer sur google</span>
+            </div>
+        </div>
+
+      <div class="btn-RS" onclick="googleSignIn()">
+        <div class="facebook">
+            <img src="img/fb2.png" alt="Facebook connect" class="google-img">
+            <span class="Text-f">S'enregistrer sur facebook</span>
+        </div>
       </div>
-      <div class="facebook">
-        <button onclick="fbSignIn()"><img src="img/continuer-avec-facebook.png" alt="fb connect"></button>
-      </div>
-      <div class="twitter">
-        <button onclick="twitterSignIn()"><img src="img/continuer-avec-twitter.svg" alt="twitter connect"></button>
-      </div>
-      <div class="email"></div>
+
+        <div class="btn-RS" onclick="twitterSignIn()">
+            <div class="twitter">
+                <img src="img/twitter.svg" alt="twitter connect" class="google-img">
+                <span class="Text-t">S'enregistrer sur twitter</span>
+            </div>
+        </div>
+
+        <div class="btn-RS" onclick="SignIn()">
+            <div class="email">
+                <img src="img/mail.svg" alt="mail" class="email-img">
+                <span class="Text-m">S'enregistrer via email</span>
+            </div>
+        </div>
     </div>
   </div>
 
