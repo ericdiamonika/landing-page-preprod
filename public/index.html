@@ -21,10 +21,41 @@
     <script defer src="/__/firebase/init.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/effect.js"></script>
-      <script src="js/modal_email.js"></script>
     <script src="js/connect.js"></script>
   </head>
   <body>
+
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="img/closecross.svg" class="close" alt="">
+        <h2>ADRESSE MAIL</h2>
+        <img src="img/rectangle-modale.svg" class="img-header" alt="">
+      </div>
+      <div class="modal-body">
+        <p>Soyez informer du lancement de l’école</p>
+        <input type="text" id="email" name="email" placeholder="Entrez votre e-mail ici">
+        <button onclick="emailSignIn()">Valider</button>
+      </div>
+    </div>
+  </div>
+
+  <!--<div id="myModal" class="thank">
+    &lt;!&ndash; Modal content &ndash;&gt;
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="img/closecross.svg" class="close" alt="">
+        <h2>MERCI À TOI!</h2>
+        <img src="img/rectangle-modale.svg" class="img-header" alt="">
+      </div>
+      <div class="modal-body">
+        <p>Nous avons bien reçu ta demande nous te contacterons dès qu’il y aura du nouveau.</p>
+        <button type="submit">À bientôt</button>
+      </div>
+    </div>
+  </div>-->
+
   <!-- Banner -->
   <div class="block">
     <!-- Header -->
@@ -91,33 +122,33 @@
     </div>
 
     <div class="right">
-        <div class="btn-RS" onclick="fbSignIn()">
+        <div class="btn-RS" onclick="googleSignIn()">
             <div class="google">
                 <img src="img/gg.png" alt="google connect" class="google-img">
-                <span class="Text-g">S'enregistrer sur google</span>
+                <span class="Text-g">S'inscrire</span>
             </div>
         </div>
 
-      <div class="btn-RS" onclick="googleSignIn()">
+      <div class="btn-RS" onclick="fbSignIn()">
         <div class="facebook">
             <img src="img/fb2.png" alt="Facebook connect" class="google-img">
-            <span class="Text-f">S'enregistrer sur facebook</span>
+            <span class="Text-f">S'inscrire</span>
         </div>
       </div>
 
         <div class="btn-RS" onclick="twitterSignIn()">
             <div class="twitter">
                 <img src="img/twitter.svg" alt="twitter connect" class="google-img">
-                <span class="Text-t">S'enregistrer sur twitter</span>
+                <span class="Text-t">S'inscrire</span>
             </div>
         </div>
 
-        <div class="btn-RS" onclick="SignIn()">
+       <!-- <div class="btn-RS" onclick="SignIn()">
             <div class="email">
                 <img src="img/mail.svg" alt="mail" class="email-img">
-                <span class="Text-m">S'enregistrer via email</span>
+                <span class="Text-m">S'inscrire</span>
             </div>
-        </div>
+        </div>-->
     </div>
   </div>
 
@@ -140,7 +171,10 @@
   <!-- contact -->
 
 
+  <script type="text/javascript"> var sib_prefix = 'sib'; var sib_dateformat = 'dd-mm-yyyy'; </script>
+  <script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1526904693'></script>
   <script src="js/cookie.js"></script>
+  <script src="js/modal.js"></script>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
