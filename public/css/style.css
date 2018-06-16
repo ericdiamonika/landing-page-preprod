@@ -177,6 +177,7 @@ body{
   position: fixed;
   bottom: 0;
     display: none;
+    right: 0;
 }
 .cookie-container{
   display: flex;
@@ -214,6 +215,7 @@ width: 40px;
   text-align: center;
   display: block;
   margin: 0 auto;
+    background-color: #fff;
   width: 274px;
   height: 44px;
   border-radius: 22px;
@@ -381,6 +383,8 @@ p{
 
 .right{
     padding-right: 5%;
+    position: relative;
+    right: 0;
 }
 
 h3{
@@ -409,6 +413,7 @@ h3{
   width: 100%;
   position: relative;
   margin-left: 2%;
+    z-index: 10;
 }
 
 .all-button .button.is-primary{
@@ -428,12 +433,12 @@ h3{
 }
 
 .block.footer{
-  padding: 5% 0;
-  max-height: 280px;
+    padding: 3% 0;
+    max-height: 205px;
 }
 
 .foot{
-  padding: 2% 0;
+  padding: 1% 0;
   background-image: url(../img/footer-l.svg);
   background-color: #ffebd6;
   max-height: 60px;
@@ -441,6 +446,7 @@ h3{
 
 .footer .title{
   text-align: center;
+    margin-bottom: inherit;
 }
 
 .rs{
@@ -466,18 +472,16 @@ h3{
   margin-bottom: inherit !important;
 }
 
-.header-ML{
-  padding: 2% 0;
-  max-height: 20px;
-}
-
 .header-ML h1{
   color: white;
-  font-size: 33px;
+    position: relative;
+    bottom: 25px;
 }
 
 .header-ML .ml{
   width: 100%;
+    position: absolute;
+    padding: 2% 0;
 }
 
 .icon .fa-angle-left{
@@ -523,6 +527,7 @@ li{
 
 .parent{
   display: flex;
+    justify-content: center;
   margin-bottom: 4%;
 }
 
@@ -531,7 +536,7 @@ li{
   background: white;
   width: 260px;
   border-radius: 5px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
   font-size: 12px;
   cursor: pointer;
   margin-bottom: 8%;
@@ -560,6 +565,10 @@ li{
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+}
+
+.right span{
+    font-weight: bold;
 }
 
 .Text-f{
@@ -625,10 +634,14 @@ li{
 
   .btn-back-responsive {
     display: block;
-    width: 8%;
+    width: 4%;
     position: absolute;
-    margin: 5% 3%;
+    margin: 0 3%;
   }
+    .header-ML h1{
+        bottom: 40px;
+        font-size: 1.2rem;
+    }
 
   .btn-RS{
     margin: 7% auto;
@@ -754,19 +767,29 @@ li{
   .title{
     font-size: 1rem;
     line-height: 1.5rem;
+    margin-bottom: 0.5rem !important;
   }
-  .columns p{
+    .t-explain h2{
+        font-size: 0.9rem;
+    }
+
+ p{
     font-size: 0.8rem;
   }
   .rs img{
-    width: 85%;
+    width: 70%;
   }
   .footer .title{
     margin-bottom: inherit !important;
   }
   .block.footer{
-    height: 180px;
+    height: 150px;
   }
+    .header-ML h1{
+        bottom: 0;
+        top: -23px;
+        font-size: 0.8rem !important;
+    }
 }
 
 @media screen and (max-width: 472px) {
