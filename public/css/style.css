@@ -37,7 +37,7 @@ body{
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 580px;
+  width: 430px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -97,9 +97,9 @@ body{
   max-width: none;
   width: 680px;
   top: -10px;
-  height: 180px;
+  height: 120px;
   position: relative;
-  left: -15%;
+  left: -25%;
 }
 
 .modal-body {
@@ -272,6 +272,17 @@ width: 40px;
   animation: bounce 1s ease infinite alternate;
 }
 
+.thank{
+  position: relative;
+  z-index: 10;
+  display: none;
+  padding-right: 5%;
+}
+
+.right{
+  display: none;
+}
+
 .bold {
   font-weight: bold !important;
 }
@@ -305,10 +316,29 @@ div.column.text-element {
   padding: 8% 0 0;
 }
 
+.text-element{
+    position: relative;
+    -webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove;
+    animation-duration: 5s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {right: -100%;}
+    to {right: 0;}
+}
+
+@keyframes mymove {
+    from {right: -100%;}
+    to {right: 0;}
+}
+
 .banner .contact-content {
   width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
   height: 70px;
   line-height: 70px;
   position: absolute;
@@ -569,6 +599,7 @@ li{
 
 .right span{
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .Text-f{
@@ -610,6 +641,8 @@ li{
   color: white;
 }
 
+
+
 @media screen and (max-width: 1022px) {
   h1{
     font-size: 3rem;
@@ -626,6 +659,11 @@ li{
 @media screen and (max-width: 915px) {
   .button.is-primary {
     display: none;
+  }
+
+  .thank{
+    padding-right: inherit;
+    margin-top: 5%;
   }
 
   .parent{

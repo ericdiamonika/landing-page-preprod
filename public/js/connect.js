@@ -46,30 +46,4 @@ twitterSignIn=()=>{
     }))
 }
 
-/*emailSignIn=()=>{
 
-    var actionCodeSettings = {
-        // URL you want to redirect back to. The domain (www.example.com) for this
-        // URL must be whitelisted in the Firebase Console.
-        url: 'https://htaginstitute-preprod.firebaseapp.com/',
-        // This must be true.
-        handleCodeInApp: true,
-        iOS: {
-            bundleId: 'https://htaginstitute-preprod.firebaseapp.com/'
-        },
-        android: {
-            packageName: 'https://htaginstitute-preprod.firebaseapp.com/',
-            installApp: true,
-            minimumVersion: '12'
-        }
-    };
-    const promise = auth().sendSignInLinkToEmail(email, actionCodeSettings)
-    .then(function(result){
-        window.localStorage.setItem('emailForSignIn', email);
-        console.log(result)
-        console.log("Success..Email Account Linked")
-    }).catch((function(err){
-        console.log(err)
-        console.log("Failed to do")
-    }))
-}*/
