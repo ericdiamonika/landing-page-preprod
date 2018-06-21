@@ -1,7 +1,7 @@
 googleSignIn=()=>{
 
     base_provider = new firebase.auth.GoogleAuthProvider()
-    firebase.auth().signInWithPopup(base_provider).then(function(result){
+    firebase.auth().signInWithRedirect(base_provider).then(function(result){
         console.log(result)
         console.log("Success..Google Account Linked")
     }).catch((function(err){
@@ -13,7 +13,7 @@ googleSignIn=()=>{
 fbSignIn=()=>{
 
     fb_provider = new firebase.auth.FacebookAuthProvider()
-    firebase.auth().signInWithPopup(fb_provider).then(function(result){
+    firebase.auth().signInWithRedirect(fb_provider).then(function(result){
         console.log(result)
         console.log("Success..fb Account Linked")
         var token = result.credential.accessToken;
@@ -27,7 +27,7 @@ fbSignIn=()=>{
 twitterSignIn=()=>{
 
     t_provider = new firebase.auth.TwitterAuthProvider()
-    firebase.auth().signInWithPopup(t_provider).then(function(result){
+    firebase.auth().signInWithRedirect(t_provider).then(function(result){
         console.log(result)
         console.log("Success..twitter Account Linked")
         var token = result.credential.accessToken;
