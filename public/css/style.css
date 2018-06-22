@@ -528,16 +528,13 @@ h3{
   display: flex;
   justify-content: center;
 }
-
 .text-explain p{
   color: #000;
 }
-
 .text-explain a{
   text-decoration: none;
   color: #000;
 }
-
 .text-explain .t-explain{
   width: 70%;
   margin: 5%;
@@ -562,7 +559,7 @@ li{
 
 .parent{
   display: flex;
-    justify-content: center;
+  justify-content: center;
   margin-bottom: 4%;
 }
 
@@ -644,7 +641,168 @@ li{
   color: white;
 }
 
+/* Loading */
+.cls-1{
+  fill:#c8b5f6;
+}
+.cls-2{
+  fill:#ac91f1;
+}
+.cls-3{
+  fill:#7547e8;
+}
 
+#anime-logo{
+    width: 5%;
+}
+
+#page {
+    display: none;
+}
+
+ #loading{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@-webkit-keyframes rotate-circle1 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotate-circle1 {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotate-circle1 {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+@keyframes rotate-circle1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*   rotation circle 2   */
+@-webkit-keyframes rotate-circle2 {
+    from {
+        -webkit-transform: rotate(360deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+}
+@-moz-keyframes rotate-circle2 {
+    from {
+        -moz-transform: rotate(360deg);
+    }
+    to {
+        -moz-transform: rotate(0deg);
+    }
+}
+@-o-keyframes rotate-circle2 {
+    from {
+        -o-transform: rotate(360deg);
+    }
+    to {
+        -o-transform: rotate(0deg);
+    }
+}
+@keyframes rotate-circle2 {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/*   rotation circle 3   */
+@-webkit-keyframes rotate-circle3 {
+    from {
+        -webkit-transform: rotate(360deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+}
+@-moz-keyframes rotate-circle3 {
+    from {
+        -moz-transform: rotate(360deg);
+    }
+    to {
+        -moz-transform: rotate(0deg);
+    }
+}
+@-o-keyframes rotate-circle3 {
+    from {
+        -o-transform: rotate(360deg);
+    }
+    to {
+        -o-transform: rotate(0deg);
+    }
+}
+@keyframes rotate-circle3 {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+#rotate-circle1{
+    -webkit-animation: rotate-circle1 2s linear infinite;
+    -moz-animation: rotate-circle1 2s linear infinite;
+    -ms-animation: rotate-circle1 2s linear infinite;
+    -o-animation: rotate-circle1 2s linear infinite;
+    animation: rotate-circle1 2s linear infinite;
+}
+
+#anime2{
+    animation: rotate-circle2 0.4s;
+    -moz-animation: rotate-circle2 0.4s;
+    -webkit-animation: rotate-circle2 0.4s;
+    -o-animation: rotate-circle2 0.4s;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+#anime3{
+    animation: rotate-circle2 0.2s;
+    -moz-animation: rotate-circle2 0.2s;
+    -webkit-animation: rotate-circle2 0.2s;
+    -o-animation: rotate-circle2 0.2s;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
 
 @media screen and (max-width: 1022px) {
   h1{
